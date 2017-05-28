@@ -1,0 +1,59 @@
+﻿@import "../Mixins/_size.less";
+
+@card_border: #1a1a1a;
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &.red {
+        background: linear-gradient(135deg, white 50%, #e03f4c 50%);
+    }
+
+    &.blue {
+        background: linear-gradient(135deg, white 50%, #4189a3 50%);
+    }
+
+    &.green {
+        background: linear-gradient(135deg, white 50%, #42a576 50%);
+    }
+
+    &.yellow {
+        background: linear-gradient(135deg, white 50%, #e8d860 50%);
+    }
+
+    &-wrapper {
+        display: block;
+        position: relative;
+        border-radius: 10px;
+        .square(150px);
+        padding: 10px;
+        background-color: white;
+        border: 3px solid;
+
+        &.large {
+            .square(240px);
+            border: 6px solid @card_border;
+        }
+    }
+
+    &-footer {
+        position: absolute;
+        padding: 5px 10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-top: 2px solid @card_border;
+        font-size: 12px;
+
+        & > .right {
+            float: right;
+        }
+
+        & > .left {
+            float: left;
+        }
+    }
+}

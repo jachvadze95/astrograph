@@ -1,0 +1,59 @@
+﻿@import "../Mixins/_variables.less";
+
+.dummy-universe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    background-color: #182339;
+}
+
+.sky-container {
+    padding: 0 15px;
+    width: 40%;
+    float: left;
+}
+
+.content-container {
+    padding: 0 15px;
+    width: 60%;
+    float: left;
+}
+
+@media @desktop {
+    .matcher {
+        padding-top: 50px;
+        width: 100%;
+        display: block;
+
+        h1 {
+            font-size: 110px;
+            margin-bottom: 5px;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        .form-group {
+            padding: 0 10px;
+        }
+
+        .form-control {
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+
+    .daily-horoscope {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+
+        h3 {
+            font-size: 28px;
+        }
+    }
+}

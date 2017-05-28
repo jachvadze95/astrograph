@@ -1,0 +1,105 @@
+.header {
+    width: 100%;
+    float: left;
+    background: #182339;
+    text-align: center;
+    height: 310px;
+    color: white;
+    margin-bottom: 0;
+
+
+    h3 {
+        font-size: 50px;
+        margin-top: 70px;
+    }
+}
+
+table {
+    img {
+        width: 100%;
+    }
+
+    td {
+        vertical-align: middle;
+    }
+}
+
+
+.main-content {
+    float: left;
+    width: 100%;
+    position:relative;
+    top: -50px;
+    border-radius: 4px;
+    padding: 0 15px;
+
+    &.white-bg {
+    background: white;
+    box-shadow: 1px 1px 5px #8a8a8a;
+    }
+}
+
+.checkout-form {
+    width: 768px;
+    display: block;
+    margin: 0 auto;
+}
+
+.add-to-basket {
+    margin-top: 25px;
+}
+
+
+.item-list {
+    display: inline-block;
+    padding-left: 0;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 4px;
+    width: 100%;
+
+    .pager-item, .pager-next, .pager-previous {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+    .pager-current {
+        position: relative;
+        float: left;
+        padding: 6px 0;
+        width: 35px;
+        margin-left: -1px;
+        line-height: 1.42857143;
+        color: #337ab7;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        z-index: 3;
+        color: #fff;
+        cursor: default;
+        background-color: #337ab7;
+        border-color: #337ab7;
+    }
+
+    .pager-first, .pager-last {
+        display: none;
+    }
+}
+
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.pager {
+    display: inline-block;
+}

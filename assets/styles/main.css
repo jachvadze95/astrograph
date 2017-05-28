@@ -1,0 +1,692 @@
+﻿@font-face {
+    font-family: "Mtavruli";
+    src: url('Fonts/TBC Din Mtavruli Bold.eot');
+    src: url('Fonts/TBC Din Mtavruli Bold.eot?#iefix') format('embedded-opentype'), url('Fonts/TBC Din Mtavruli Bold.woff') format('woff'), url('Fonts/TBC Din Mtavruli Bold.ttf') format('truetype'), url('Fonts/TBC Din Mtavruli Bold.svg#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nusxuri";
+    src: url('Fonts/TBC Din Nusxuri Bold.eot');
+    src: url('Fonts/TBC Din Nusxuri Bold.eot?#iefix') format('embedded-opentype'), url('Fonts/TBC Din Nusxuri Bold.woff') format('woff'), url('Fonts/TBC Din Nusxuri Bold.ttf') format('truetype'), url('Fonts/TBC Din Nusxuri Bold.svg#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tengizi";
+    src: url('Fonts/Myriad Pro Regular.eot');
+    src: url('Fonts/Myriad Pro Regular.eot?#iefix') format('embedded-opentype'), url('Fonts/Myriad Pro Regular.woff') format('woff'), url('Fonts/Myriad Pro Regular.ttf') format('truetype'), url('Fonts/Myriad Pro Regular.svg#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+body p,
+body,
+body button,
+body,
+body a {
+    font-family: Nusxuri;
+}
+
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body h5,
+    body h6,
+    body .header,
+    .uppercase {
+        font-family: Mtavruli;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    body.en,
+    body.en p,
+    body.en,
+    body.en button,
+    body.en,
+    body.en a {
+        font-family: Tengizi;
+    }
+
+        body.en h1,
+        body.en h2,
+        body.en h3,
+        body.en h4,
+        body.en h5,
+        body.en h6,
+        body.en .header,
+        .uppercase {
+            font-family: Tengizi;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100%;
+    background: -webkit-linear-gradient(0deg, #182339 41.66666667%, #f1f1f1 41.66666667%);
+    /* For Safari 5.1 to 6.0 */
+    color: #182339;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.content {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+    .full-height {
+        height: 90%;
+        height: -moz-calc(100vh - 151px);
+        height: -webkit-calc(100vh - 151px);
+        height: -o-calc(100vh - 151px);
+        height: calc(100vh - 151px);
+        position: relative;
+    }
+}
+
+.v-center-image {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    margin: auto;
+}
+
+#sky {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+}
+
+    #sky .dot {
+        display: block;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+    }
+
+#bodymovin {
+    width: 100%;
+}
+
+.navbar {
+    border: none;
+    border-bottom: 2px solid #a0a0a0;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.form-control {
+    background-color: #cccccc;
+    border-radius: 3px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px;
+}
+
+.dummy-universe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    background-color: #182339;
+}
+
+.sky-container {
+    padding: 0 15px;
+    width: 40%;
+    float: left;
+}
+
+.content-container {
+    padding: 0 15px;
+    width: 60%;
+    float: left;
+}
+
+@media screen and (min-width: 992px) {
+    .matcher {
+        padding-top: 50px;
+        width: 100%;
+        display: block;
+    }
+
+        .matcher h1 {
+            font-size: 80px;
+            margin-bottom: 5px;
+        }
+
+        .matcher form {
+            margin-top: 50px;
+        }
+
+        .matcher .form-group {
+            margin: 0 0 0 15px;
+        }
+
+        .matcher form button {
+            margin-top: 15px;
+        }
+
+        .matcher .form-control {
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+            background: #182339;
+            border: 1px solid white;
+            color: white;
+            border-radius: 3px;
+        }
+
+    .daily-horoscope {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+
+        .daily-horoscope h3 {
+            font-size: 28px;
+        }
+}
+
+.icon {
+    display: block;
+    position: relative;
+}
+
+.icon-sm {
+    width: 75px;
+    height: 60px;
+    background-size: 75px;
+}
+
+@media screen and (min-width: 992px) {
+    .icon-sm {
+        width: 60px;
+        height: 60px;
+        background-size: 80px;
+    }
+}
+
+.icon-kirchkibi {
+    background-image: url("Icons/kirchkibi.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-kuro {
+    background-image: url("Icons/kuro.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-lomi {
+    background-image: url("Icons/lomi.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-merwyuli {
+    background-image: url("Icons/merwyuli.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-morieli {
+    background-image: url("Icons/morieli.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-mshvildosani {
+    background-image: url("Icons/mshvildosani.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-qalwuli {
+    background-image: url("Icons/qalwuli.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-saswori {
+    background-image: url("Icons/saswori.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-tevzebi {
+    background-image: url("Icons/tevzebi.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-txa {
+    background-image: url("Icons/txa.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-tyupebi {
+    background-image: url("Icons/tyupebi.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.icon-verdzi {
+    background-image: url("Icons/verdzi.png");
+    background-repeat: no-repeat;
+    background-position: -9px -5px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+    .card.red {
+        background: linear-gradient(135deg, white 50%, #e03f4c 50%);
+    }
+
+    .card.blue {
+        background: linear-gradient(135deg, white 50%, #4189a3 50%);
+    }
+
+    .card.green {
+        background: linear-gradient(135deg, white 50%, #42a576 50%);
+    }
+
+    .card.yellow {
+        background: linear-gradient(135deg, white 50%, #e8d860 50%);
+    }
+
+.card-wrapper {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #182339;
+    border-radius: 7px;
+}
+
+    .card-wrapper.large {
+        width: 240px;
+        height: 240px;
+        border: 6px solid #1a1a1a;
+    }
+
+    .card-wrapper.center {
+        margin: 0 auto;
+    }
+
+.card-footer {
+    position: absolute;
+    padding: 5px 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 2px solid #1a1a1a;
+    font-size: 12px;
+}
+
+    .card-footer > .right {
+        float: right;
+    }
+
+    .card-footer > .left {
+        float: left;
+    }
+
+.daily {
+    display: block;
+    position: relative;
+    padding: 30px 50px;
+}
+
+    .daily .daily-grid-item {
+        padding: 0 5px 5px;
+    }
+
+        .daily .daily-grid-item img {
+            width: 100%;
+        }
+
+.and {
+    width: 50px;
+    height: 50px;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    line-height: 50px;
+}
+
+.match-result {
+    margin-top: 15px;
+    padding: 0 50px;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+    .match-result h3 {
+        font-size: 24px;
+    }
+
+    .match-result .description {
+    }
+
+.ui-datepicker-year {
+    display: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: #182339;
+    color: white;
+}
+
+.ui-widget.ui-widget-content {
+    padding: 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    color: #182339;
+    text-align: center;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background-color: #182339;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #182339;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    padding: 9px 29px;
+    font-size: 16px;
+}
+
+    .btn-primary:hover {
+        background-color: #364461;
+        color: white;
+    }
+
+.zodiac-icon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    right: -10px;
+    margin: auto;
+}
+
+.daily-horoscope .list-inline > li {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+
+.date-input {
+    width: 150px;
+    height: 150px;
+    background: #182339;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    color: white;
+}
+
+    .date-input .day {
+        font-size: 60px;
+        display: block;
+    }
+
+    .date-input .month {
+        font-size: 12px;
+    }
+
+    .date-input .placeholder {
+        font-size: 22px;
+        display: block;
+        margin-top: 20px;
+    }
+
+.not-visible {
+    visibility: hidden;
+    width: 150px !important;
+    height: 0px !important;
+}
+
+.upper {
+    font-family: Mtavruli;
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+.padding-up-svg {
+    padding: 55px 85px 35px;
+}
+
+.match-img-cont {
+    width: 70%;
+    margin: 35px auto;
+}
+
+@media screen and (min-width: 992px) {
+    .svg-cont {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: -moz-calc(100vh - 150px);
+        height: -webkit-calc(100vh - 150px);
+        height: -o-calc(100vh - 150px);
+        height: calc(100vh - 150px);
+    }
+
+    #bodymovin {
+        width: 200%;
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        background: transparent;
+    }
+
+    .blue-sm {
+        background-color: #182339;
+    }
+
+    .matcher {
+        margin-top: 25px;
+    }
+
+        .matcher h1 {
+            font-size: 50px;
+        }
+
+        .matcher form {
+            padding: 15px 0;
+        }
+
+    .daily-horoscope {
+        margin-top: 15px;
+    }
+
+
+    .match-img-cont {
+        width: 80%;
+        margin: 35px auto;
+    }
+
+    .padding-up-svg {
+        padding: 35px;
+    }
+
+    .daily {
+        padding: 15px 10px;
+    }
+
+    .date-input {
+        margin: 0 15px;
+    }
+
+    .match-result .description {
+        padding-bottom: 25px;
+    }
+
+    .swap-cont-xs {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* optional */
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+
+        .swap-cont-xs .swap-child-1-xs {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            -ms-flex-order: 2;
+            -webkit-order: 2;
+            order: 2;
+        }
+
+        .swap-cont-xs .swap-child-2-xs {
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            -ms-flex-order: 1;
+            -webkit-order: 1;
+            order: 1;
+        }
+}
+
+@media screen and (max-width: 767px) {
+
+    .date-input {
+        margin: 0 auto;
+    }
+
+    .and {
+        display: none;
+    }
+
+    .match-result {
+        padding: 0 15px;
+    }
+
+    .matcher h1 {
+        font-size: 32px;
+    }
+
+    .padding-up-svg {
+        padding: 35px 0 0;
+    }
+
+        .match-img-cont {
+        width:90%;
+        margin: 35px auto;
+    }
+
+}
+
+.go-back {
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    font-size: 26px;
+    color: #182339;
+}
+
+    .go-back:hover, .go-back:focus {
+        text-decoration: none;
+        color: #182339;
+    }
+
+.relativize {
+    position: relative;
+}

@@ -1,0 +1,62 @@
+﻿.font-face(@name, @family: arial, @weight: normal, @style: normal) {
+    @font-face {
+        font-family: @name;
+        src: url('../Fonts/@{family}.eot');
+        src: url('../Fonts/@{family}.eot?#iefix') format('embedded-opentype'), url('../Fonts/@{family}.woff') format('woff'), url('../Fonts/@{family}.ttf') format('truetype'), url('../Fonts/@{family}.svg#icon') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.font-configuration(@main-font-size: 14px, @h1: 2rem, @h2: 1.5rem, @h3: 1.17rem, @h4: 1.12rem, @h5: 0.83rem, @h6: 0.75rem) {
+    @html: 62.5%;
+
+    .h1 {
+        font-size: @h1;
+    }
+
+    .h2 {
+        font-size: @h2;
+    }
+
+    .h3 {
+        font-size: @h3;
+    }
+
+    .h4 {
+        font-size: @h4;
+    }
+
+    .h5 {
+        font-size: @h5;
+    }
+
+    .h6 {
+        font-size: @h6;
+    }
+
+    html {
+        font-size: @html;
+    }
+
+    body, p {
+        font-size: @main-font-size;
+    }
+}
+
+
+
+.language-configuration(@language-tag, @font-family-main-text, @font-family-header, @scope: "body") {
+    @full-escaped-tag: e(%("%a%d", e(@scope), e(@language-tag)));
+
+    @{full-escaped-tag}, @{full-escaped-tag} p, @{full-escaped-tag}, @{full-escaped-tag} button, @{full-escaped-tag}, @{full-escaped-tag} a {
+        font-family: @font-family-main-text;
+    }
+
+    @{full-escaped-tag} h1, @{full-escaped-tag} h2, @{full-escaped-tag} h3, @{full-escaped-tag} h4, @{full-escaped-tag} h5, @{full-escaped-tag} h6, @{full-escaped-tag} .header, .uppercase {
+        font-family: @font-family-header;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,7 @@
+﻿
+.calc(@option, @expression) {
+    @{option}: -moz-calc(e(@expression));
+    @{option}: -webkit-calc(e(@expression));
+    @{option}: -o-calc(e(@expression));
+    @{option}: calc(e(@expression));
+}
